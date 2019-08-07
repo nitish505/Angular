@@ -1,0 +1,13 @@
+<h1>Welcome !</h1>
+<div class="container">welcome {{name}} In Angular 7! Check Your Todos List<a routerLink="/todos"> here</a>
+ </div>
+ <div class="container">
+Get A Message From Here
+<button (click)="getWelcomeMessageWithPathVariable()" class="btn btn-success">Get Welcome Message</button>
+
+ </div>
+ <div class="container" *ngIf="welcomeMessageFromService">
+ <h2>Server Response</h2>
+ {{welcomeMessageFromService}}
+ {{errorMessage}}
+ </div>
